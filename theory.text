@@ -1,0 +1,7 @@
+Theory for file system
+1.The Portable Operating System Interface (POSIX) is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems.
+2.The asynchronous form always takes a completion callback as its last argument. The arguments passed to the completion callback depend on the method, but the first argument is always reserved for an exception. If the operation was completed successfully, then the first argument will be null or undefined.
+  When using the synchronous form any exceptions are immediately thrown. Exceptions may be handled using try/catch, or they may be allowed to bubble up.
+  eg: fs.writeFile(err handling mechanishm,callback) //asynchronous coding style
+     for synchronous style error are handled in try/catch block or bubled up
+3.Note that all file system APIs except fs.FSWatcher() and those that are explicitly synchronous use libuv's threadpool.
