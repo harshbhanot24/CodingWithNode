@@ -8,7 +8,7 @@ var StudentClass={
     ClassId:1,
     SchoolId:1,
     Name:"first",
-    Size:10
+    
 }
 var student={
     studentId:1,
