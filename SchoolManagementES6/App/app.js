@@ -5,5 +5,8 @@ function app(){
         console.log("1.school");
         console.log("2.class");
         console.log("3.student");
+        //const readline=require('readline');
+        readline();
     }while(true);
 }
+app();
